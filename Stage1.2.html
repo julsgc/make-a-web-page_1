@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+
+<!-- Note I changed everything again. I know I'm learning because at every turn I'm making mistakes ;-) and then correcting them. I hope after much practice I can get the hang of the basic structures required - ahead of time - for CSS and I assume JAVA and other languages. --> 
+<html>
+<head>
+	<title>Udacity Intro to Programming 1.3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="image-box">
+		<img class="my-image" src="Smilebox_568664856.jpg" alt="Happy Mom and Son in Germany">
+	</div>
+	<h1>INTRO TO PROGRAMMING</h1>
+	<div class="lesson">
+		<h2>LESSON 0: How We Learn</h2>
+		<div class="concept">
+			<div class="concept-title">
+				THE PATH FROM NOVICE TO EXPERT
+			</div>
+			<div class="concept-description">
+				<p>
+					In learning anything we go from Novice to Expert by
+				</p>
+					<ol>
+						<li>Awareness - creating an understanding of the concepts about our selected subject through various forms of communication</li>
+						<li>Ability - Applying the concepts we've learned in practice</li>
+						<li>Fluency - Deliberate practice in the subject</li>
+						<li>Expert - Develops after a (debatable) 10,00 hours of practicing the subject (<i>Outliers</i>, Gladwell). See more on this <a href="http://www.businessinsider.com/new-study-destroys-malcolm-gladwells-10000-rule-2014-7">here</a> and <a href="http://www.businessinsider.com/malcolm-gladwell-explains-the-10000-hour-rule-2014-6">here</a></li>
+					</ol>
+			</div>
+		</div>
+	</div>
+
+	<div class="lesson">
+		<h2>LESSON 1: Web and HTML Basics</h2>
+		<div class="concept">
+			<div class="concept-title">
+				THE WEB
+			</div>
+			<div class="concept-description">
+				<p>
+					The web is the network of collected documents saved on servers and on individuals computers - all connected and communicating with one another, consisting of:
+				</p>
+					<ul>
+						<li>URLS: The Uniform Resource Locator is the file location or address of a file on the web (it is the www.blahblahblah.ninja for example).</li>
+						<li>HTTP: The Hypertext Transfer Protocol is a standard that allows users to exchange information found on web pages. It directs your computer over the internet to the servers where the document needed for your web page is stored. There is also FTP and HTTPS.</li>
+						<li>WEB APPLICATIONS: Any software/application that runs in a web browser, created in various languages (Java, CSS and HTML, for example)</li>
+						<li>A WEB PAGE is a text document written in a web application language interpreted by your web browser to display them</li>
+					</ul>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				HTML VOCABULARY
+			</div>
+			<div class="concept-description">
+				<p>
+					HTML is a web application language used to make web pages and consists of:
+				</p>
+					<ul>
+						<li>TAGS: An HTML tag is always contained within angled brackets. 
+							<ul>
+								<li>1. CLOSING - ones that require both a &lt; &gt; and &lt; / &gt; for example </li>
+								<li>2. VOID - these do not require a closing slash tag </li>
+							</ul>
+						</li>
+						<li>ELEMENTS: Everything within a set of opening and closing tags.
+							<ul>
+								<li>INLINE - keeps information in the same line </li>
+								<li>BLOCK - separating elements, creating an invisible block of content </li>
+							</ul>
+						<li>ATTRIBUTE: The property of an HTML element. They sit inside the tag within quotations marks. For example the link to <a href="www.studiograce.net">www.studiograce.net</a> looks like this &lt;a href="www.studiograce.net"&gt;www.studiograce.net&lt;/a&gt;</li>
+					</ul>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				CODING WORKS LIKE THIS
+			</div>
+			<div class="concept-description">
+				<p>
+					Coding happens when programmers write text in a language that a computer can understand. The computer can then follow the instructions the programmer wrote. For example the computer might write "<b>I'm learning to code!</b>"" by making the text bold like using this set of tags: &lt;b&gt; I'm learning to code!&lt;/b&gt;
+				</p>	
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				COMPUTERS ARE STUPID
+			</div>
+			<div class="concept-description">
+				<p>
+					Programmers need to write exactly the way a computer understands (also known as writing with correct "syntax"). For example, if you forget to close a "closing tag," the computer won't be able to figure out what you had intended to make bold. This "stupidity" can be very frustrating, but it also gives programmers incredible power: if you know how to talk to a computer than you can tell it to do anything you want.
+				</p>	
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				WRITING CODE
+			</div>
+			<div class="concept-description">
+				<p>
+					We can use various text editors to write code. Sublime Text and various other programming specific text editors can very helpful in creating a page by automatically generating the closing tags and providing references to tag names. 
+				</p>
+				<p>
+					The steps to creating a page:
+				</p>
+					<ol>
+						<li>Take the design and look for natural Boxes</li>
+						<li>Look for common styles of various elements</li>
+						<li>Write HTML</li>
+						<li>Apply Styles</li>
+						<li>Fix things</li> 
+					</ol>
+			</div>
+		</div>			
+		<div class="concept">
+			<div class="concept-title">
+				PROGRAMMERS CAN'T REMEMBER EVERYTHING
+			</div>
+			<div class="concept-description">
+				<p>
+					<i>(What's not to love about this declaration!) </i><br>
+				There are too many details to keep everything in your head. And that's okay. If you forget the proper code in HTML, you can always just look it up.
+				</p>	
+			</div>
+		</div>
+	</div>
+
+	<div class="lesson">
+		<h2>LESSON 2: The Roles of HTML, CSS and JAVA</h2>
+		<div class="concept">
+			<div class="concept-title">
+				HTML<br>
+				(Hyper Text Markup Language)
+			</div>
+			<div class="concept-description">
+				<p>
+					Provides the Structure to a page
+				</p>
+					<ul>
+						<li>HTML documents contain content (what you see) and mark up (how it looks). </li>
+						<li>DOM (Document Object Model) is the tree like structure created by the nesting of elements in HTML. In reading the code it is a series of collapsible and expandable triangles/nodes. This works much like an org chart or family tree going form parent to child.</li>
+						<li>Reading HTML: in reading this code we see a series of indentations forming a wave with the left side of the window. Each indention is nested within in the one above it - the more indented, the more nested an element is.</li>
+						<li>Boxify your page design using Div tags: Div is a block element that allows us to implement the design of a page by looking at it as a series of boxes.</li>
+						<li>Labeling your boxes with relevant names helps with the styling in CSS later.</li>
+					</ul>
+			</div>	
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				CSS<br>
+				(Cascading Style Sheet, with the emphasis on Cascading)
+			</div>
+			<div class="concept-description">
+				<p>
+					Provides the Style to a page 
+				</p>
+					<ul>
+						<li>CSS is a separate file that is referenced in your HTML code</li>
+						<li>CSS saves a lot of work and time by allowing us to change the look of a site by only editing a much smaller CSS file.</li>
+						<li>CSS defines how the various elements (positioning, layout, fonts, colors and other style information) within HTML are displayed by using selectors </li>
+						<li>A single CSS file can define the style for multiple HTML files, which helps programmers avoid coding repetition* of which the benefits include:
+							<ul>
+								<li>avoiding coding mistakes</li>
+								<li>smaller files</li>
+								<li>less typing</li>
+								<li>easier page style editing</li>
+								<li>faster page loading</li>
+								<li>code can be more "readable" in that there is less repetitive code to skim through</li>
+							</ul>
+						</li>
+						<li>Cascading is the inheritance of styles by elements - the ancestor descendant "inherited" relationship of their properties. Not all properties are inherited. See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance">this web page</a> for reference of what is and is not inherited</li>
+						<li>Box Model: a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content. See <a href="http://www.w3schools.com/css/css_boxmodel.asp">this web page</a> for graphic representation of one. </li>
+					</ul>
+					<!-- Note I'm going a tad overboard here. Not because I don't understand the bene's of repetition but because as an overly organized, OCD, logical, graphic designer, single mom, and business owner, I'm all too intimately familiar to the value of not having to repeat ANYTHING. The benefits are so logical to my everyday existence they don't seem like they need a lot of validation. However, I want to ensure I don't miss this Specification this time and I want get every drop of learning at this stage before I move on (thus avoiding learning repetition ;-). If I am still missing something, can you provide more direction on where to look or can we slate a phone con? Sincere thanks in advance for your assist and guidance --> 
+					<p>
+						<i>* Avoiding repetition is a common theme in all programming languages and one of the key tenets to "good" coding. It requires abstract thinking about the functionality of the various parts of a web page (or program). The concept is referred to as DRY (Don't Repeat Yourself). See <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">this page</a> for more details. Also see <a href="http://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)">this page</a> about abstraction. Further, in creating this page it has allowed me to merely define the roles of the text on the page with a common element tag for items with common roles (headings, concepts, concept titles, etc). Then in a single CSS file I can define the appearance of each role/element, and as required, change with a single line of code (size, weight, font type, color etc).</i>
+					</p>
+			</div>
+		</div>	
+		<div class="concept">
+			<div class="concept-title">
+				JAVA Script
+			</div>
+			<div class="concept-description">
+				<p>
+					<i>(To be studied later.)</i> Provides the interactive elements of a web page)
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- Note What I learned from this re-submittal - 1. Always, always ALWAYS run your code through the Validator if you retype ANYTHING within it and 2. Some things may be overly obvious to me, but still need proper explanation to relay my understanding --> 
